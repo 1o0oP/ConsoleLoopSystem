@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ConsoleLoopSystem.Model.User.Elements
+﻿namespace ConsoleLoopSystem.Model
 {
-  class Player
+  class Player : User
   {
+    public Player(string name, string definition, string nickname, string email, string password, string permission) :
+      base(name, definition, nickname, email, password, permission)
+    {
+      Type = "Player";
+    }
   }
 }

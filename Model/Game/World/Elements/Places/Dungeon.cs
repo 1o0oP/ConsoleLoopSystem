@@ -11,6 +11,7 @@ namespace ConsoleLoopSystem.Model
       string luminosity, string tactility, string environment, string aspect, string history, string population) :
       base(name, definition, temperature, luminosity, tactility, environment, aspect, history, population)
     {
+      Type = "Dungeon";
     }
   }
 }

@@ -9,6 +9,7 @@
 
     public Bond(string name, string definition, bool result) : base(name, definition)
     {
+      Type = "Bond";
       Result = result;
     }
   }

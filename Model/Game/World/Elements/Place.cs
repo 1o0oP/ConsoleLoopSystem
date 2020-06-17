@@ -14,6 +14,7 @@
       string tactility, string environment, string aspect, string population, string history) :
       base(name, definition)
     {
+      Type = "Place";
       Temperature = temperature;
       Luminosity = luminosity;
       Tactility = tactility;

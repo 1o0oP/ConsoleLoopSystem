@@ -4,6 +4,7 @@
   {
     public Virtue(string name, string definition) : base(name, definition)
     {
+      Type = "Virtue";
     }
   }
 }

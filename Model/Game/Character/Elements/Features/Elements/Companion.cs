@@ -11,6 +11,7 @@ namespace ConsoleLoopSystem.Model
     public Companion(string name, string definition, int health, int spirit, string role) : 
       base(name, definition)
     {
+      Type = "Companion";
       Health = health;
       Spirit = spirit;
       Role = role;

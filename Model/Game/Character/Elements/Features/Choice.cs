@@ -4,6 +4,7 @@
   {
     public Choice(string name, string definition) : base(name, definition)
     {
+      Type = "Choice";
     }
   }
 }

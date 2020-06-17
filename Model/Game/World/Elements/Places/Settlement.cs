@@ -11,6 +11,7 @@ namespace ConsoleLoopSystem.Model
       string tactility, string environment, string aspect, string population, string history, string problem) : 
       base(name, definition, temperature, luminosity, tactility, environment, aspect, history, population)
     {
+      Type = "Settlement";
       Problem = problem;
     }
   }

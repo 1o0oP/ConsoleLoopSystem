@@ -10,6 +10,7 @@ namespace ConsoleLoopSystem.Model
 
     public World(string name, string definition) : base(name, definition)
     {
+      Type = "World";
     }
   }
 }

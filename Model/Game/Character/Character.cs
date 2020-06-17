@@ -20,6 +20,7 @@ namespace ConsoleLoopSystem.Model
       string role) :
       base(name, definition)
     {
+      Type = "Character";
       Strength = strength;
       Dexterity = dexterity;
       Intelligence = intelligence;
@@ -32,7 +33,7 @@ namespace ConsoleLoopSystem.Model
       return 2*(Virtues.Sum(virtue => virtue.Powers.Count) + Choices.Sum(choice => choice.Powers.Count)) +
         (Virtues.Count + Choices.Count) - 9;
     }
-    public bool FindFeatureById(int id)
+    public bool ExistsFeatureById(int id)
     { // Verifica se existe um certo Feature dentre os Features do personagem
       if (Virtues.Any(virtue => virtue.Id == id) || Choices.Any(virtue => virtue.Id == id))
       {

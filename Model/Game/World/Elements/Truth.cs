@@ -8,6 +8,7 @@
     public Truth(string name, string definition, string theme, string description) :
       base(name, definition)
     {
+      Type = "Truth";
       Theme = theme;
       Description = description;
     }
